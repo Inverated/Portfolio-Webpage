@@ -1,0 +1,33 @@
+{
+    "experiences": [
+        {
+            "title": "Software Engineer",
+            "subtitle": "National University of Singapore",
+            "workType": "Capstone Project",
+            "workDescription": [
+                "TBC"
+            ],
+            "dateText": "06/2026 – Present"
+        },
+        {
+            "title": "Research Experience Fellows",
+            "subtitle": "National University of Singapore",
+            "workType": "Undergraduate Research Opportunity Programme",
+            "workDescription": [
+                "Worked on Power Management System for Roti Proa II, a solar-powered autonomous boat, consisting of the combination of firmware, software, and hardware.",
+                "Implemented a **power management system** using **Arduino** and **Python** to monitor and control the power consumption of the boat.",
+                "Developed a **web-based dashboard** using **React** and **Node.js** to visualize the power consumption data and provide real-time feedback to the user."
+            ],
+            "dateText": "01/2026 – 12/2026"
+        },
+        {
+            "title": "Teaching Assistant",
+            "subtitle": "National University of Singapore",
+            "workType": "CS2030",
+            "workDescription": [
+                "Conduct weekly lab session on **Java** programming, Programming Methodology II."
+            ],
+            "dateText": "08/2025 – 05/2026"
+        }
+    ]
+}

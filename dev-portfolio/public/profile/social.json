@@ -1,0 +1,16 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/qf-kor/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/Inverated"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:e1398589@u.nus.edu"
+        }
+    ]
+}
