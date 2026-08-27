@@ -2,18 +2,21 @@
     "education":[
         {
             "title": "Aug 2024",
-            "cardTitle": "Bachalor of Computing, Business Artificial Intelligence System",
+            "cardTitle": "Bachalor of Computing, Business Artificial Intelligence System; Information Systems",
             "cardSubtitle":"National University of Singapore",
             "cardDetailedText": "GPA - 4.33",
             "icon" : {
-                "src": "images/education/lorem-ipsum.png"
+                "src": "images/education/nus.png"
             }
         },
         {
             "title": "Jan 2019 - Dec 2021",
             "cardTitle": "A Level",
             "cardSubtitle":"Jurong Pioneer Junior College, Singapore",
-            "cardDetailedText": "RP - 86"
+            "cardDetailedText": "RP - 86",
+            "icon" : {
+                "src": "images/education/jpjc.png"
+            }
         }
     ]
 }

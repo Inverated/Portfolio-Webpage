@@ -14,15 +14,15 @@
                     "title": "JavaScript"
                 },
                 {
+                    "icon": "images/skills/typescript.png",
+                    "title": "TypeScript"
+                },
+                {
                     "icon": "images/skills/python.png",
                     "title": "Python"
                 },
                 {
-                    "icon": "images/skills/r.png",
-                    "title": "R"
-                },
-                {
-                    "icon": "images/skills/cpp.png",
+                    "icon": "images/skills/c-plus-plus.png",
                     "title": "C++"
                 },
                 {
@@ -34,7 +34,7 @@
                     "title": "MongoDB"
                 },
                 {
-                    "icon": "images/skills/mongodb.png",
+                    "icon": "images/skills/sqlite.png",
                     "title": "SQLite"
                 }
         ]},
@@ -54,12 +54,20 @@
                     "title": "Nodejs"
                 },
                 {
-                    "icon": "images/skills/express.png",
+                    "icon": "images/skills/js.png",
                     "title": "Express"
                 },
                 {
                     "icon": "images/skills/flask.png",
                     "title": "Flask"
+                },
+                {
+                    "icon": "images/skills/arduino.png",
+                    "title": "Arduino IDE"
+                },
+                {
+                    "icon": "images/skills/raspberry_pi.png",
+                    "title": "Raspberry Pi"
                 }
             ]
         },
@@ -75,12 +83,20 @@
                     "title": "Docker"
                 },
                 {
-                    "icon": "images/skills/linux.png",
-                    "title": "Linux"
+                    "icon": "images/skills/ubuntu.png",
+                    "title": "Ubuntu"
                 },
                 {
                     "icon": "images/skills/supabase.png",
                     "title": "Supabase"
+                },
+                {
+                    "icon": "images/skills/kicad.png",
+                    "title": "KiCad"
+                },
+                {
+                    "icon": "images/skills/jlc.png",
+                    "title": "JLCPCB"
                 }
             ]
     }

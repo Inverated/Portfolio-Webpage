@@ -5,29 +5,54 @@
             "subtitle": "National University of Singapore",
             "workType": "Capstone Project",
             "workDescription": [
-                "TBC"
+                "AI-Powered Insurance Risk Report Generator - TBC"
             ],
-            "dateText": "06/2026 – Present"
+            "dateText": "06/2026 - Present"
         },
         {
             "title": "Research Experience Fellows",
             "subtitle": "National University of Singapore",
             "workType": "Undergraduate Research Opportunity Programme",
             "workDescription": [
-                "Worked on Power Management System for Roti Proa II, a solar-powered autonomous boat, consisting of the combination of firmware, software, and hardware.",
-                "Implemented a **power management system** using **Arduino** and **Python** to monitor and control the power consumption of the boat.",
-                "Developed a **web-based dashboard** using **React** and **Node.js** to visualize the power consumption data and provide real-time feedback to the user."
+                "Development of a Power Management System for Roti Proa II, a solar-wind powered boat, consisting of the combination of firmware, software, and hardware application.",
+                "Implemented a **power management system** framework using a network of **ESP32**s and **Raspberry Pi** to wirelessly monitor and control an array of sensors throughout the boat.",
+                "Creation of a custom PCB and 3D printed enclosure for high frequency sensor.",
+                "Developed a **web-based dashboard** using **React** and **Node.js** via serial communication with the sensors to visualize the power consumption data and provide real-time feedback to the user.",
+                "Simulation & automatic electrical validation for range prediction of the vessel.",
+                "Integration of a workflow orchestration framework using a parametised value of the system (Physical layout and dimention of the boad and electrical system)"
             ],
-            "dateText": "01/2026 – 12/2026"
+            "dateText": "01/2026 - 12/2026"
+        },
+        {
+            "title": "Human Resourse Management System (HRMS)",
+            "subtitle": "National University of Singapore",
+            "workType": "IS3108 - Full-stack Software Engineering for AI Solutions II",
+            "workDescription": [
+                "Development of a HRMS with basic functionality of a management portal, shift allocation, worker management, etc.",
+                "Implemented facial recognition & location-based check-in."
+            ],
+            "dateText": "01/2026 - 05/2026"
+
+
         },
         {
             "title": "Teaching Assistant",
             "subtitle": "National University of Singapore",
-            "workType": "CS2030",
+            "workType": "CS2030 - Programming Methodology II",
             "workDescription": [
-                "Conduct weekly lab session on **Java** programming, Programming Methodology II."
+                "Conduct weekly lab sessions on **Java** programming.",
+                "Guided students on proper programming concepts and design, including OOP using Java."
             ],
-            "dateText": "08/2025 – 05/2026"
+            "dateText": "08/2025 - 05/2026"
+        },
+        {
+            "title": "Aurora Mart - Personalised Shopping Experience",
+            "subtitle": "National University of Singapore",
+            "workType": "IS2108 - Full-stack Software Engineering for AI Solutions I",
+            "workDescription": [
+                "Automatic item recommendation based on rules generated from a ML model.",
+                "Recommends item based on current cart item, past purchases and behaviour learning of similar shopper's profile."
+            ]
         }
     ]
 }
