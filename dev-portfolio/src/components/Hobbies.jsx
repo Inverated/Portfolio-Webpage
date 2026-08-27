@@ -3,17 +3,17 @@ import { Fade } from 'react-awesome-reveal';
 import PropTypes from 'prop-types';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
-import ProjectCard from './projects/ProjectCard';
+import HobbyCard from './hobbies/HobbyCard';
 import FallbackSpinner from './FallbackSpinner';
-import '../css/projects.css';
+import '../css/hobbies.css';
 
-function Projects(props) {
+function Hobbies(props) {
   const { header } = props;
   const [data, setData] = useState(null);
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    fetch(endpoints.projects, {
+    fetch(endpoints.hobbies, {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -21,7 +21,7 @@ function Projects(props) {
       .catch((err) => err);
   }, []);
 
-  const numberOfItems = showMore && data ? data.projects.length : 6;
+  const numberOfItems = showMore && data ? data.hobbies.length : 6;
 
   return (
     <>
@@ -30,18 +30,18 @@ function Projects(props) {
         <div className="section-content-container">
           <Fade triggerOnce>
             <div className="bento">
-              {data.projects?.slice(0, numberOfItems).map((project, index) => (
-                <ProjectCard
-                  key={project.title}
-                  project={project}
+              {data.hobbies?.slice(0, numberOfItems).map((hobby, index) => (
+                <HobbyCard
+                  key={hobby.title}
+                  hobby={hobby}
                   featured={index === 0}
                 />
               ))}
             </div>
           </Fade>
 
-          {!showMore && data.projects?.length > numberOfItems && (
-            <div className="projects-more">
+          {!showMore && data.hobbies?.length > numberOfItems && (
+            <div className="hobbies-more">
               <button
                 type="button"
                 className="btn-pill btn-ghost"
@@ -57,8 +57,8 @@ function Projects(props) {
   );
 }
 
-Projects.propTypes = {
+Hobbies.propTypes = {
   header: PropTypes.string.isRequired,
 };
 
-export default Projects;
+export default Hobbies;

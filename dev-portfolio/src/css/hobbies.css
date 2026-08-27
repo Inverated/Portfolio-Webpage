@@ -1,0 +1,122 @@
+/* Projects as a bento of tiles. The first card is featured (wider, taller
+   media); the rest are uniform two-column tiles. Tiles inherit .tile styling. */
+
+.hobby-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  text-align: left;
+  height: 100%;
+}
+
+.hobby-card__media {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+}
+
+.hobby-card--featured .hobby-card__media {
+  aspect-ratio: 21 / 9;
+}
+
+.hobby-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--dur) var(--ease);
+}
+
+.hobby-card:hover .hobby-card__media img {
+  transform: scale(1.04);
+}
+
+.hobby-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.hobby-card__title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.hobby-card__text > :first-child {
+  margin-top: 0;
+}
+
+.hobby-card--featured .hobby-card__title {
+  font-size: 1.6rem;
+}
+
+.hobby-card__text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.hobby-card__text p:last-child {
+  margin-bottom: 0;
+}
+
+.hobby-card__footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.hobby-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4em 0.95em;
+  transition: border-color var(--dur) var(--ease),
+    background var(--dur) var(--ease);
+}
+
+.proj-link:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.hobby-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.hobby-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3em 0.75em;
+}
+
+.hobbies-more {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-6);
+}

@@ -26,9 +26,9 @@
             "headerTitle": "Projects"
         },
         {
-            "component": "Hobby",
-            "path": "/hobby",
-            "headerTitle": "Hobby"
+            "component": "Hobbies",
+            "path": "/hobbies",
+            "headerTitle": "Hobbies"
         }
     ]
 }

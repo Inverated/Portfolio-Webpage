@@ -1,0 +1,125 @@
+{
+    "hobbies" : [
+        {
+            "image" : "images/projects/portfolio-poster.png",
+            "title": "Solar Proa II - Power Management System",
+            "bodyText": "- Designed and implemented a high powered electrical system and wireless communication network for sensor communication and data collection for a wind and solar powered 48V, 4kW electrical vessel using custom firmware, software, hardware and PCB. \n - Consist of a network of **ESP32** and **Raspberry Pi** devices that communicate with each other using **ESP-NOW** protocol to run a custom **(E) Kalman Filter** algorithm. \n - Developed a **web-based dashboard** using **React** and **Node.js** to visualize the power consumption data and provide real-time feedback to the user, including a developer / admin portal with authentication for controlling the system.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Inverated/Proa_Local_Server_Network"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Nodejs",
+                "Supabase",
+                "C++",
+                "Ubuntu",
+                "ESP-NOW",
+                "Battery Management System"
+            ]
+        },
+        {
+            "image" : "images/projects/portfolio-poster.png",
+            "title": "Solar Proa II - Digital Twin & Simulation",
+            "bodyText": "- A digital twin and simulation of the Solar Proa II vessel using **GNU Make**, **Python**, and **PySpice**. \n - The software uses a parametised step model approach to achieve a single, unified model for the vessel. \n - The simulation is used to test and validate the power management system, electrical wiring, and the vessel's performance under different conditions such as varying weather and time of day.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/shipshape-marine/solar-proa/tree/main/src/electrical_simulation"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://solarproa.org/electrical_rp2.html"
+                }
+            ],
+            "tags" : [
+                "Python",
+                "PySpice",
+                "GNU Make"
+            ]
+        },
+        {
+            "image" : "images/projects/portfolio-poster.png",
+            "title": "PDF and Image Converter",
+            "bodyText": "- A Windows application with UI that runs locally to modify PDF and Image page ordering. Mainly used for re-ordering pdf pages and inserting images between them. Can convert images to PDF and vice versa with option for different formats and quality.\n - Allows for compact view & disabling preview to load pdf with hundreds of pages in seconds. \n - Made using **Python**, **PySide** and **PyInstaller**.\n - Not meant for photo editing.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Inverated/PDF-and-Image-Converter-With-UI"
+                }
+            ],
+            "tags" : [
+                "Python",
+                "PySide",
+                "PyInstaller"
+            ]
+        },
+        {
+            "image" : "images/projects/portfolio-poster.png",
+            "title": "Trie Auto Complete",
+            "bodyText": "- A command-line interface application for auto-completing words using a Trie data structure.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Inverated/Trie-autocomplete"
+                }
+            ],
+            "tags" : [
+                "Python"
+            ]
+        },
+        {
+            "image" : "images/projects/portfolio-poster.png",
+            "title": "Text to (QR) Code Generator",
+            "bodyText": "- A JavaFX App that generates **QR Code** from text and vice versa.\n - Uses **ZXing** library to generate QR Code.\n - Can save the generated QR Code as an image.\n - Supports different encryption levels, color and customised logo in the QR Code.\n - Comes with a **QR Code Scanner** that uses **OpenCV** for image correction and scan QR Codes from images and camera used for additional validation of generated codes.\n - As this is the first Java app I made, it is badly designed, slow and cannot be exported as an appication but works fine otherwise.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Inverated/Text-to-QR-Code"
+                }
+            ],
+            "tags" : [
+                "Java",
+                "JavaFX",
+                "ZXing",
+                "OpenCV"
+            ]
+        },
+        {
+            "image" : "images/projects/portfolio-poster.png",
+            "title": "Bank Sync",
+            "bodyText": "- A simple Transation Statement parser and organiser web app made with **React** and **Supabase**.\n - Real transaction data from common banks in Singapore is parsed and stored in a database.\n - Users can view, update and export their transactions and filter by date, category, and amount, giving user full control over their financial data.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Inverated/BankSync"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Supabase",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "image" : "images/projects/portfolio-poster.png",
+            "title": "AWS x Mandai Hackathon [Vibe-Coded]",
+            "bodyText": "- A recreation of a hackathon project vibe-coded entirely using **Kiro**, a AI powered IDE",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Inverated/AWS-Mandai-Hackathon-Project"
+                }
+            ],
+            "tags" : [
+                "Nodejs",
+                "React",
+                "Kiro",
+                "Sqlite",
+                "AWS"
+            ]
+        }
+    ]
+}

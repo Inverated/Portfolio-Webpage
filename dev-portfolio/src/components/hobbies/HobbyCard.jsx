@@ -2,30 +2,30 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 
-function ProjectCard({ project, featured = false }) {
+function HobbyCard({ hobby, featured = false }) {
   const parseBodyText = (text) => <ReactMarkdown>{text}</ReactMarkdown>;
 
   return (
     <article
-      className={`tile tile--interactive project-card ${
-        featured ? 'span-4 project-card--featured' : 'span-2'
+      className={`tile tile--interactive hobby-card ${
+        featured ? 'span-4 hobby-card--featured' : 'span-2'
       }`}
     >
-      {project?.image && (
-        <div className="project-card__media">
-          <img src={project.image} alt={project.title} />
+      {hobby?.image && (
+        <div className="hobby-card__media">
+          <img src={hobby.image} alt={hobby.title} />
         </div>
       )}
 
-      <div className="project-card__body">
-        <h3 className="project-card__title">{project.title}</h3>
-        <div className="project-card__text">{parseBodyText(project.bodyText)}</div>
+      <div className="hobby-card__body">
+        <h3 className="hobby-card__title">{hobby.title}</h3>
+        <div className="hobby-card__text">{parseBodyText(hobby.bodyText)}</div>
       </div>
 
-      <div className="project-card__footer">
-        {project?.links?.length > 0 && (
-          <div className="project-card__links">
-            {project.links.map((link) => (
+      <div className="hobby-card__footer">
+        {hobby?.links?.length > 0 && (
+          <div className="hobby-card__links">
+            {hobby.links.map((link) => (
               <a
                 key={link.href}
                 className="proj-link"
@@ -40,10 +40,10 @@ function ProjectCard({ project, featured = false }) {
             ))}
           </div>
         )}
-        {project?.tags?.length > 0 && (
-          <div className="project-card__tags">
-            {project.tags.map((tag) => (
-              <span key={tag} className="project-tag">{tag}</span>
+        {hobby?.tags?.length > 0 && (
+          <div className="hobby-card__tags">
+            {hobby.tags.map((tag) => (
+              <span key={tag} className="hobby-tag">{tag}</span>
             ))}
           </div>
         )}
@@ -52,9 +52,9 @@ function ProjectCard({ project, featured = false }) {
   );
 }
 
-ProjectCard.propTypes = {
+HobbyCard.propTypes = {
   featured: PropTypes.bool,
-  project: PropTypes.shape({
+  hobby: PropTypes.shape({
     title: PropTypes.string.isRequired,
     bodyText: PropTypes.string.isRequired,
     image: PropTypes.string,
@@ -66,4 +66,4 @@ ProjectCard.propTypes = {
   }).isRequired,
 };
 
-export default ProjectCard;
+export default HobbyCard;
