@@ -97,6 +97,10 @@
                 {
                     "icon": "images/skills/jlc.png",
                     "title": "JLCPCB"
+                },
+                {
+                    "icon": "images/skills/espressif.png",
+                    "title": "ESPRESSIF"
                 }
             ]
     }

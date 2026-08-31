@@ -15,20 +15,33 @@
             "workType": "Undergraduate Research Opportunity Programme",
             "workDescription": [
                 "Development of a Power Management System for Roti Proa II, a solar-wind powered boat, consisting of the combination of firmware, software, and hardware application.",
-                "Implemented a **power management system** framework using a network of **ESP32**s and **Raspberry Pi** to wirelessly monitor and control an array of sensors throughout the boat.",
+                "Implemented a framework using a network of **ESP32**s and **Raspberry Pi** to wirelessly monitor and control an array of sensors throughout the boat.",
                 "Creation of a custom PCB and 3D printed enclosure for high frequency sensor.",
-                "Developed a **web-based dashboard** using **React** and **Node.js** via serial communication with the sensors to visualize the power consumption data and provide real-time feedback to the user.",
-                "Simulation & automatic electrical validation for range prediction of the vessel.",
+                "Developed a **web-based dashboard** using **MERN** with communication via serial with the sensors to visualize the power consumption data and provide real-time feedback to the user.",
+                "**Digital twin** simulation & automatic electrical validation for range prediction of the vessel.",
                 "Integration of a workflow orchestration framework using a parametised value of the system (Physical layout and dimention of the boad and electrical system)"
             ],
             "dateText": "01/2026 - 12/2026"
+        },
+        {   
+            "title": "Lightweight Workflow Orchestration for AI-Assisted Parametric Engineering",
+            "subtitle": "National University of Singapore",
+            "workType": "Research On Automated Design",
+            "workDescription": [
+                "Co-authored a research and development of a Parametric Workflow Orchestration system",
+                "Simulate and validate results of parametised value of the system using **CAD** and **physics simulations** of mechanical and electrical components.",
+                "Integration of a step-by-step design principle with dependency management using **GNU Make**",
+                "Case study of **Roti Proa II**, where the vessel is built upon validated result from the system."
+            ],
+            "dateText": "01/2026 - 05/2026"
         },
         {
             "title": "Human Resourse Management System (HRMS)",
             "subtitle": "National University of Singapore",
             "workType": "IS3108 - Full-stack Software Engineering for AI Solutions II",
             "workDescription": [
-                "Development of a HRMS with basic functionality of a management portal, shift allocation, worker management, etc.",
+                "Development of a HRMS, consisting of a management & worker's portal, shift allocation, worker management, etc.",
+                "Agile development using MERN stack.",
                 "Implemented facial recognition & location-based check-in."
             ],
             "dateText": "01/2026 - 05/2026"

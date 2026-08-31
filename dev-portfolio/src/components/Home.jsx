@@ -45,6 +45,8 @@ function Home() {
                 options={{
                   loop: true,
                   autoStart: true,
+                  delay: 40,
+                  deleteSpeed: 10,
                   strings: data?.roles,
                 }}
               />

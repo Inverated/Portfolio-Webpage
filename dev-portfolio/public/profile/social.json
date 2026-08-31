@@ -10,7 +10,11 @@
         },
         {
             "network" : "email",
-            "href": "mailto:e1398589@u.nus.edu"
+            "href": "mailto:korqianfu14@gmail.com"
+        },
+        {
+            "network" : "telegram",
+            "href": "https://t.me/Inverated"
         }
     ]
 }
