@@ -10,11 +10,18 @@
   height: 100%;
 }
 
+/* Media is a button so the whole thumbnail opens the lightbox on click. */
 .hobby-card__media {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
   border-radius: var(--radius-md);
   overflow: hidden;
   aspect-ratio: 16 / 9;
   border: 1px solid var(--border);
+  background: var(--surface-2);
+  cursor: zoom-in;
 }
 
 .hobby-card--featured .hobby-card__media {
@@ -26,11 +33,59 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform var(--dur) var(--ease);
+  transform: scale(1);
+  transition: transform 600ms var(--ease);
 }
 
-.hobby-card:hover .hobby-card__media img {
+/* When multiple images are present they are stacked and crossfaded. */
+.hobby-card__media img:not(:only-child) {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 600ms var(--ease), transform 600ms var(--ease);
+}
+
+.hobby-card__media img.is-active {
+  opacity: 1;
+}
+
+/* Hover affordance: gently zoom the image and reveal an "expand" hint.
+   The zoom is clipped by the media's `overflow: hidden`, so the button's
+   own box never changes size (which would otherwise cause a hover loop). */
+.hobby-card__media:hover img {
   transform: scale(1.04);
+}
+
+.hobby-card__media-hint {
+  position: absolute;
+  bottom: var(--space-2);
+  right: var(--space-2);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: color-mix(in srgb, #000 55%, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.35em 0.7em;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  pointer-events: none;
+}
+
+.hobby-card__media:hover .hobby-card__media-hint,
+.hobby-card__media:focus-visible .hobby-card__media-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hobby-card__media:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .hobby-card__body {

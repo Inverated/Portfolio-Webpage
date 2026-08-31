@@ -1,9 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
+import ImageLightbox from '../common/ImageLightbox';
+
+const DEFAULT_CYCLE_INTERVAL = 4000;
 
 function ProjectCard({ project, featured = false }) {
   const parseBodyText = (text) => <ReactMarkdown>{text}</ReactMarkdown>;
+
+  // Support both a single `image` string and an `images` array.
+  const buildImageList = () => {
+    if (Array.isArray(project?.images) && project.images.length > 0) {
+      return project.images;
+    }
+    return project?.image ? [project.image] : [];
+  };
+  const images = buildImageList();
+
+  const interval = project?.imageInterval || DEFAULT_CYCLE_INTERVAL;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  useEffect(() => {
+    if (images.length <= 1) return undefined;
+
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [images.length, interval]);
+
+  const hasMultiple = images.length > 1;
 
   return (
     <article
@@ -11,10 +39,26 @@ function ProjectCard({ project, featured = false }) {
         featured ? 'span-4 project-card--featured' : 'span-2'
       }`}
     >
-      {project?.image && (
-        <div className="project-card__media">
-          <img src={project.image} alt={project.title} />
-        </div>
+      {images.length > 0 && (
+        <button
+          type="button"
+          className="project-card__media"
+          onClick={() => setLightboxOpen(true)}
+          aria-label={`View ${project.title} images`}
+        >
+          {images.map((src, index) => (
+            <img
+              key={src}
+              src={src}
+              alt={project.title}
+              className={index === currentIndex ? 'is-active' : ''}
+              aria-hidden={index === currentIndex ? undefined : 'true'}
+            />
+          ))}
+          <span className="project-card__media-hint">
+            {hasMultiple ? `⤢ View all ${images.length}` : '⤢ Expand'}
+          </span>
+        </button>
       )}
 
       <div className="project-card__body">
@@ -48,6 +92,14 @@ function ProjectCard({ project, featured = false }) {
           </div>
         )}
       </div>
+
+      <ImageLightbox
+        images={images}
+        open={lightboxOpen}
+        startIndex={currentIndex}
+        title={project.title}
+        onClose={() => setLightboxOpen(false)}
+      />
     </article>
   );
 }
@@ -58,6 +110,8 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     bodyText: PropTypes.string.isRequired,
     image: PropTypes.string,
+    images: PropTypes.arrayOf(PropTypes.string),
+    imageInterval: PropTypes.number,
     links: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string.isRequired,
       href: PropTypes.string.isRequired,

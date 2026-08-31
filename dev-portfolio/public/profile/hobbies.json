@@ -1,7 +1,12 @@
 {
     "hobbies" : [
         {
-            "image" : "images/projects/portfolio-poster.png",
+            "images" : [
+                "images/projects/solar_proa_elec_sim.png",
+                "images/projects/solar_proa_schematics.png",
+                "images/projects/portfolio-poster.png"
+            ],
+            "imageInterval": 4000,
             "title": "Solar Proa II - Power Management System",
             "bodyText": "- Designed and implemented a high powered electrical system and wireless communication network for sensor communication and data collection for a wind and solar powered 48V, 4kW electrical vessel using custom firmware, software, hardware and PCB. \n - Consist of a network of **ESP32** and **Raspberry Pi** devices that communicate with each other using **ESP-NOW** protocol to run a custom **(E) Kalman Filter** algorithm. \n - Developed a **web-based dashboard** using **React** and **Node.js** to visualize the power consumption data and provide real-time feedback to the user, including a developer / admin portal with authentication for controlling the system.",
             "links": [
