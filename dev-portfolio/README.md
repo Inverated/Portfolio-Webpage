@@ -553,7 +553,7 @@ Deploy that `build/` folder to any static host. I highly recommend [Vercel](http
 
 ### Single-page-app routing ☝️
 
-This app uses client-side routing (`BrowserRouter`), so a static host must serve `index.html` for **every** path. Without this, refreshing or directly opening a route like `/projects` returns a **404**. Add the matching rewrite for your host:
+This app uses client-side routing (`HashRouter`), so a static host must serve `index.html` for **every** path. Without this, refreshing or directly opening a route like `/projects` returns a **404**. Add the matching rewrite for your host:
 
 - **Vercel** — add a `vercel.json` in the project root:
 
