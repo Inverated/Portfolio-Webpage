@@ -521,8 +521,8 @@ export const darkTheme = {
   background: '#09090b',
   color: '#f4f4f5',
   textMuted: '#a1a1aa',
-  accentColor: '#818cf8',   // the single accent
-  accentColor2: '#c084fc',  // used only for gradients
+  accentColor: '#f88181',   // the single accent
+  accentColor2: '#fc8484',  // used only for gradients
   cardBackground: '#141417',
   cardBorderColor: 'rgba(255, 255, 255, 0.08)',
   navbarBackground: 'rgba(9, 9, 11, 0.62)',

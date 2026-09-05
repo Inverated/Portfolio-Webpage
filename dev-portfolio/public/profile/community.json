@@ -1,0 +1,34 @@
+{
+    "community": [
+        {
+            "images": [
+                "images/community/pss_1.jpg",
+                "images/community/pss_2.jpg",
+                "images/community/pss_3.jpg"
+            ],
+            "title": "Peer Student Supporter (NUS SoC)",
+            "bodyText": "- Provide support to fellow students, providing students a listening ear as they navigate through academic challenges. \n - Maintain an environment for students to rest and take their mind off studying. \n - Conduct events to spread awareness on mental health.",
+            "links": [
+            ],
+            "tags": [
+                "Fun",
+                "Games",
+                "No studying in pitstop"
+            ]
+        },
+        {
+            "images": [
+                "images/community/scam_1.jpg",
+                "images/community/scam_2.jpg",
+                "images/community/scam_3.jpg"
+            ],
+            "title": "Anti-scam Workshop",
+            "bodyText": "- Conduct anti-scam workshop for the more vulnerable members of the society. \n - Aim to spread digital literacy and online safety in the current age of AI for the elderly community to recognise and avoid scams.",
+            "links": [
+            ],
+            "tags": [
+                "Do not scam anyone, especially the elderlies"
+            ]
+        }
+    ]
+}

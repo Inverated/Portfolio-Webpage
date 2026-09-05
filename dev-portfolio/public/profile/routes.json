@@ -26,6 +26,11 @@
             "headerTitle": "Projects"
         },
         {
+            "component": "Community",
+            "path": "/community",
+            "headerTitle": "Community"
+        },
+        {
             "component": "Hobbies",
             "path": "/hobbies",
             "headerTitle": "Hobbies"

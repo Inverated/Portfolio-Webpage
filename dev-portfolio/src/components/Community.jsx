@@ -3,17 +3,17 @@ import { Fade } from 'react-awesome-reveal';
 import PropTypes from 'prop-types';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
-import HobbyCard from './hobbies/HobbyCard';
+import CommunityCard from './community/CommunityCard';
 import FallbackSpinner from './FallbackSpinner';
-import '../css/hobbies.css';
+import '../css/community.css';
 
-function Hobbies(props) {
+function Community(props) {
   const { header } = props;
   const [data, setData] = useState(null);
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    fetch(endpoints.hobbies, {
+    fetch(endpoints.community, {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -21,7 +21,7 @@ function Hobbies(props) {
       .catch((err) => err);
   }, []);
 
-  const numberOfItems = showMore && data ? data.hobbies.length : 12;
+  const numberOfItems = showMore && data ? data.community.length : 15;
 
   return (
     <>
@@ -30,18 +30,18 @@ function Hobbies(props) {
         <div className="section-content-container">
           <Fade triggerOnce>
             <div className="bento">
-              {data.hobbies?.slice(0, numberOfItems).map((hobby, index) => (
-                <HobbyCard
-                  key={hobby.title}
-                  hobby={hobby}
+              {data.community?.slice(0, numberOfItems).map((community, index) => (
+                <CommunityCard
+                  key={community.title}
+                  community={community}
                   featured={index === 0}
                 />
               ))}
             </div>
           </Fade>
 
-          {!showMore && data.hobbies?.length > numberOfItems && (
-            <div className="hobbies-more">
+          {!showMore && data.community?.length > numberOfItems && (
+            <div className="community-more">
               <button
                 type="button"
                 className="btn-pill btn-ghost"
@@ -57,8 +57,8 @@ function Hobbies(props) {
   );
 }
 
-Hobbies.propTypes = {
+Community.propTypes = {
   header: PropTypes.string.isRequired,
 };
 
-export default Hobbies;
+export default Community;

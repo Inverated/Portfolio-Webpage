@@ -1,0 +1,177 @@
+/* Projects as a bento of tiles. The first card is featured (wider, taller
+   media); the rest are uniform two-column tiles. Tiles inherit .tile styling. */
+
+.community-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  text-align: left;
+  height: 100%;
+}
+
+/* Media is a button so the whole thumbnail opens the lightbox on click. */
+.community-card__media {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  cursor: zoom-in;
+}
+
+.community-card--featured .community-card__media {
+  aspect-ratio: 21 / 9;
+}
+
+.community-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform 600ms var(--ease);
+}
+
+/* When multiple images are present they are stacked and crossfaded. */
+.community-card__media img:not(:only-child) {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 600ms var(--ease), transform 600ms var(--ease);
+}
+
+.community-card__media img.is-active {
+  opacity: 1;
+}
+
+/* Hover affordance: gently zoom the image and reveal an "expand" hint.
+   The zoom is clipped by the media's `overflow: hidden`, so the button's
+   own box never changes size (which would otherwise cause a hover loop). */
+.community-card__media:hover img {
+  transform: scale(1.04);
+}
+
+.community-card__media-hint {
+  position: absolute;
+  bottom: var(--space-2);
+  right: var(--space-2);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: color-mix(in srgb, #000 55%, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.35em 0.7em;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  pointer-events: none;
+}
+
+.community-card__media:hover .community-card__media-hint,
+.community-card__media:focus-visible .community-card__media-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.community-card__media:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.community-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.community-card__title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.community-card__text > :first-child {
+  margin-top: 0;
+}
+
+.community-card--featured .community-card__title {
+  font-size: 1.6rem;
+}
+
+.community-card__text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.community-card__text p:last-child {
+  margin-bottom: 0;
+}
+
+.community-card__footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.community-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4em 0.95em;
+  transition: border-color var(--dur) var(--ease),
+    background var(--dur) var(--ease);
+}
+
+.proj-link:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.community-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.community-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3em 0.75em;
+}
+
+.communities-more {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-6);
+}

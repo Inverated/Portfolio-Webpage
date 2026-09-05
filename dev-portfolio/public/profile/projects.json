@@ -1,16 +1,25 @@
 {
-    "projects" : [
+    "projects": [
         {
-            "image" : "images/projects/solar_proa_schematics.png",
+            "images": [
+                "images/projects/solar_proa_schematics_1.png",
+                "images/projects/solar_proa_framework.png",
+                "images/projects/solar_proa_build_1.png",
+                "images/projects/solar_proa_build_2.jpg",
+                "images/projects/solar_proa_build_3.jpg",
+                "images/projects/solar_proa_build_software_1.png",
+                "images/projects/solar_proa_build_software_2.png",
+                "images/projects/solar_proa_build_software_3.png"
+            ],
             "title": "Solar Proa II - Power Management System",
-            "bodyText": "- Designed and implemented a high powered electrical system and wireless communication network for sensor communication and data collection for a wind and solar powered 48V, 4kW electrical vessel using custom firmware, software, hardware and PCB. \n - Consist of a network of **ESP32** and **Raspberry Pi** devices that communicate with each other using **ESP-NOW** protocol to run a custom **(E) Kalman Filter** algorithm. \n - Developed a **web-based dashboard** using **React** and **Node.js** to visualize the power consumption data and provide real-time feedback to the user, including a developer / admin portal with authentication for controlling the system.",
+            "bodyText": "- Designed and implemented a high powered electrical system and wireless communication network for sensor communication and data collection for a wind and solar powered 48V, 4kW electrical vessel using custom firmware, software, hardware and PCB. \n - Consist of a network of **ESP32** and **Raspberry Pi** devices that communicate with each other using **ESP-NOW** protocol to run a custom **E.Kalman Filter** algorithm. \n - Developed a **web-based dashboard** using **React** and **Node.js** to visualize the power consumption data and provide real-time feedback to the user, including a developer / admin portal with authentication for controlling the system.",
             "links": [
                 {
                     "text": "GitHub",
                     "href": "https://github.com/Inverated/Proa_Local_Server_Network"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "React",
                 "Nodejs",
                 "Supabase",
@@ -21,7 +30,10 @@
             ]
         },
         {
-            "image" : "images/projects/solar_proa_elec_sim.png",
+            "images": [
+                "images/projects/solar_proa_elec_sim_1.png",
+                "images/projects/solar_proa_elec_sim_2.png"
+            ],
             "title": "Solar Proa II - Digital Twin & Simulation",
             "bodyText": "- A digital twin and simulation of the Solar Proa II vessel using **GNU Make**, **Python**, and **PySpice**. \n - The software uses a parametised step model approach to achieve a single, unified model for the vessel. \n - The simulation is used to test and validate the power management system, electrical wiring, and the vessel's performance under different conditions such as varying weather and time of day.",
             "links": [
@@ -34,14 +46,18 @@
                     "href": "https://solarproa.org/electrical_rp2.html"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "Python",
                 "PySpice",
                 "GNU Make"
             ]
         },
         {
-            "image" : "images/projects/pdf_converter.png",
+            "images": [
+                "images/projects/pdf_converter_1.png",
+                "images/projects/pdf_converter_2.png",
+                "images/projects/pdf_converter_3.png"
+            ],
             "title": "PDF and Image Converter (Personal favourite and used a lot)",
             "bodyText": "- A Windows application with UI that runs locally to modify PDFs and image page ordering. Mainly used for **re-ordering** pdf pages and **combining** images between them. Can convert images to PDF and vice versa with option for different formats and quality.\n - Allows for **compact view** & disabling preview to load pdf with hundreds of pages in **seconds**. \n - Made using **Python**, **PySide** and **PyInstaller**.\n - Not meant for photo editing but very convinient to use when handling many pdf and images at once without using online website or Adobe.",
             "links": [
@@ -50,14 +66,14 @@
                     "href": "https://github.com/Inverated/PDF-and-Image-Converter-With-UI"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "Python",
                 "PySide",
                 "PyInstaller"
             ]
         },
         {
-            "image" : "images/projects/trie_example.png",
+            "image": "images/projects/trie_example.png",
             "title": "Trie Auto Complete",
             "bodyText": "- A lightweight command-line interface application for **auto-completing** words using a Trie data structure.\n - Easy to use and integrate into any script running on CLI for **custom words, symbol and characters**.\n - Can be adapted into an interface if required but probably have existing library for this purpose in pip or npm.",
             "links": [
@@ -66,21 +82,25 @@
                     "href": "https://github.com/Inverated/Trie-autocomplete"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "Python"
             ]
         },
         {
-            "image" : "images/projects/scanner_generator_example.png",
+            "images": [
+                "images/projects/scanner_generator_example_1.png",
+                "images/projects/scanner_generator_example_2.png",
+                "images/projects/scanner_generator_example_3.png"
+            ],
             "title": "Text to (QR) Code Generator",
-            "bodyText": "- A JavaFX App that generates **Scannable Code** (QR, barcode, etc) from text and scans.\n - Uses **ZXing** library to generate the code and OpenCV to correct and align the code.\n - Supports different encryption levels, color and customised logo in the QR Code.\n - Additional validation step by **rescanning** generated code, especially important for customised embeded logo \n - As this is the first Java app I made, it is badly designed, slow and cannot be exported as an appication but works fine otherwise.",
+            "bodyText": "- A **JavaFX** App that generates **Scannable Code** (QR, barcode, etc) from text and scans.\n - Uses **ZXing** library to generate the code and OpenCV to correct and align the code.\n - Supports different encryption levels, color and customised logo in the QR Code.\n - Additional validation step by **rescanning** generated code, especially important for customised embeded logo \n - As this is the first Java app I made, it is badly designed, slow and cannot be exported as an appication but works fine otherwise.",
             "links": [
                 {
                     "text": "GitHub",
                     "href": "https://github.com/Inverated/Text-to-QR-Code"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "Java",
                 "JavaFX",
                 "ZXing",
@@ -88,7 +108,12 @@
             ]
         },
         {
-            "image" : "images/projects/banksync.png",
+            "images": [
+                "images/projects/banksync_1.png",
+                "images/projects/banksync_2.png",
+                "images/projects/banksync_3.png",
+                "images/projects/banksync_4.png"
+            ],
             "title": "Bank Sync",
             "bodyText": "- A simple Transation Statement parser and organiser web app made with just **Python**, **React** and **Supabase**. Backend works completely off Javascript, Python Scripts and Supabase query.\n - Uses real transaction data from common banks in Singapore in PDF or Excel, which is parsed and stored in a database.\n - Works for different banks with different formatting **without** the need to run **OCR** model or **LLM** (lightweight and completely offline if hosted locally) \n - Users can view, update and export their transactions and filter by date, category, and amount, giving user full control over their financial data. \n - Comes with data analysis for insights across multiple accounts and banks.",
             "links": [
@@ -97,14 +122,18 @@
                     "href": "https://github.com/Inverated/BankSync"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "React",
                 "Supabase",
                 "PostgreSQL"
             ]
         },
         {
-            "image" : "images/projects/wildlife_lens.png",
+            "images": [
+                "images/projects/wildlife_lens_1.png",
+                "images/projects/wildlife_lens_2.png",
+                "images/projects/wildlife_lens_3.png"
+            ],
             "title": "AWS x Mandai Hackathon [Vibe-Coded]",
             "bodyText": "- A recreation of a hackathon project vibe-coded entirely using **Kiro**, a AI powered IDE. \n - Completely prompted from scratch by specifying everything, from project description, direction, down to testing method, file structuring  and development rules & restriction (see in GitHub readme). \n - Besic movement physics, database catalogue and interesting features for a short hackathon project built in half a day.",
             "links": [
@@ -117,7 +146,7 @@
                     "href": "https://www.linkedin.com/feed/update/urn:li:activity:7489735674842066946/"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "Nodejs",
                 "React",
                 "Kiro",

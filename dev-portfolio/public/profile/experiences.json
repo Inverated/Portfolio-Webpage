@@ -7,7 +7,19 @@
             "workDescription": [
                 "AI-Powered Insurance Risk Report Generator - TBC"
             ],
-            "dateText": "06/2026 - Present"
+            "dateText": "08/2026 - Present"
+        },
+        {
+            "title": "Wildlife Lens",
+            "subtitle": "Mandai x AWS Hackathon",
+            "workType": "2 Hour hackathon",
+            "workDescription": [
+                "Hackathon hosted by AWS on the use of their Kiro AI",
+                "Team project desciption provided by Mandai",
+                "- Create a personalised experience at a zoo exhibit to help guests connect more deeply with animals.",
+                "Completely prompt engineered"
+            ],
+            "dateText": "08/2026 - 08/2026"
         },
         {
             "title": "Research Experience Fellows",
@@ -45,8 +57,6 @@
                 "Implemented facial recognition & location-based check-in."
             ],
             "dateText": "01/2026 - 05/2026"
-
-
         },
         {
             "title": "Teaching Assistant",

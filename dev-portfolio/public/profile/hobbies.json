@@ -1,129 +1,158 @@
 {
-    "hobbies" : [
+    "hobbies": [
         {
-            "images" : [
-                "images/projects/solar_proa_elec_sim.png",
-                "images/projects/solar_proa_schematics.png",
-                "images/projects/portfolio-poster.png"
+            "images": [
+                "images/hobbies/ori_2.jpg",
+                "images/hobbies/ori_1.jpg",
+                "images/hobbies/ori_3.jpg",
+                "images/hobbies/ori_4.jpg",
+                "images/hobbies/ori_5.jpg",
+                "images/hobbies/ori_6.jpg",
+                "images/hobbies/ori_7.jpg",
+                "images/hobbies/ori_8.jpg"
             ],
             "imageInterval": 4000,
-            "title": "Solar Proa II - Power Management System",
-            "bodyText": "- Designed and implemented a high powered electrical system and wireless communication network for sensor communication and data collection for a wind and solar powered 48V, 4kW electrical vessel using custom firmware, software, hardware and PCB. \n - Consist of a network of **ESP32** and **Raspberry Pi** devices that communicate with each other using **ESP-NOW** protocol to run a custom **(E) Kalman Filter** algorithm. \n - Developed a **web-based dashboard** using **React** and **Node.js** to visualize the power consumption data and provide real-time feedback to the user, including a developer / admin portal with authentication for controlling the system.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/Inverated/Proa_Local_Server_Network"
-                }
-            ],
-            "tags" : [
-                "React",
-                "Nodejs",
-                "Supabase",
-                "C++",
-                "Ubuntu",
-                "ESP-NOW",
-                "Battery Management System"
+            "title": "Origami",
+            "bodyText": "- Some models i folded. \n - Currently learning how to fold more complex models",
+            "links": [],
+            "tags": [
+                "Origami",
+                "Paper art"
             ]
         },
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Solar Proa II - Digital Twin & Simulation",
-            "bodyText": "- A digital twin and simulation of the Solar Proa II vessel using **GNU Make**, **Python**, and **PySpice**. \n - The software uses a parametised step model approach to achieve a single, unified model for the vessel. \n - The simulation is used to test and validate the power management system, electrical wiring, and the vessel's performance under different conditions such as varying weather and time of day.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/shipshape-marine/solar-proa/tree/main/src/electrical_simulation"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://solarproa.org/electrical_rp2.html"
-                }
+            "images": [
+                "images/hobbies/ori_workshop_1.jpg",
+                "images/hobbies/ori_workshop_2.jpg",
+                "images/hobbies/ori_workshop_3.jpg",
+                "images/hobbies/ori_workshop_4.jpg"
             ],
-            "tags" : [
-                "Python",
-                "PySpice",
-                "GNU Make"
+            "imageInterval": 4000,
+            "title": "Origami Workshop / Exhibition",
+            "bodyText": "- Conducted workshops & exhibition. \n - Teach basic folding techniques and models.",
+            "links": [],
+            "tags": [
+                "Origami",
+                "Paper art"
             ]
         },
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "PDF and Image Converter",
-            "bodyText": "- A Windows application with UI that runs locally to modify PDF and Image page ordering. Mainly used for re-ordering pdf pages and inserting images between them. Can convert images to PDF and vice versa with option for different formats and quality.\n - Allows for compact view & disabling preview to load pdf with hundreds of pages in seconds. \n - Made using **Python**, **PySide** and **PyInstaller**.\n - Not meant for photo editing.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/Inverated/PDF-and-Image-Converter-With-UI"
-                }
+            "images": [
+                "images/hobbies/lamp_1.jpg",
+                "images/hobbies/cad_1.png",
+                "images/hobbies/cad_2.png",
+                "images/hobbies/cad_3.png",
+                "images/hobbies/cad_4.png"
             ],
-            "tags" : [
-                "Python",
-                "PySide",
-                "PyInstaller"
+            "imageInterval": 4000,
+            "title": "3D Printing and Design",
+            "bodyText": "- Lego but you make yourself",
+            "links": [],
+            "tags": [
+                "Cheap aliexpress toys",
+                "Ouch"
             ]
         },
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Trie Auto Complete",
-            "bodyText": "- A command-line interface application for auto-completing words using a Trie data structure.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/Inverated/Trie-autocomplete"
-                }
+            "images": [
+                "images/hobbies/metal_1.jpg",
+                "images/hobbies/metal_2.jpg",
+                "images/hobbies/metal_3.jpg",
+                "images/hobbies/metal_4.jpg"
             ],
-            "tags" : [
-                "Python"
+            "imageInterval": 4000,
+            "title": "Metal puzzel",
+            "bodyText": "- Lego but metal and more fun",
+            "links": [],
+            "tags": [
+                "Cheap aliexpress toys",
+                "Ouch"
             ]
         },
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Text to (QR) Code Generator",
-            "bodyText": "- A JavaFX App that generates **QR Code** from text and vice versa.\n - Uses **ZXing** library to generate QR Code.\n - Can save the generated QR Code as an image.\n - Supports different encryption levels, color and customised logo in the QR Code.\n - Comes with a **QR Code Scanner** that uses **OpenCV** for image correction and scan QR Codes from images and camera used for additional validation of generated codes.\n - As this is the first Java app I made, it is badly designed, slow and cannot be exported as an appication but works fine otherwise.",
+            "images": [
+                "images/hobbies/headphone_amp_0.jpg",
+                "images/hobbies/headphone_amp_1.jpg",
+                "images/hobbies/headphone_amp_2.jpg",
+                "images/hobbies/headphone_amp_3.jpg",
+                "images/hobbies/headphone_amp_4.jpg"
+            ],
+            "imageInterval": 4000,
+            "title": "DIY Headphone Amplifier",
+            "bodyText": "- Analog headphone amplifier using NE5532 \n - Full Super tone control circuit diagram Schematics from eleccircuit \n - Modified to add a buffer stage to use as a headphone amp \n - Should use 3d printed enclosure instead of cardboard scraps now that i have a printer",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/Inverated/Text-to-QR-Code"
+                    "text": "Eleccircuit",
+                    "href": "https://www.eleccircuit.com/three-circuits-of-preamp-tone-controls-by-ne5532/"
                 }
             ],
-            "tags" : [
-                "Java",
-                "JavaFX",
-                "ZXing",
-                "OpenCV"
+            "tags": [
+                "Cheap aliexpress components"
             ]
         },
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Bank Sync",
-            "bodyText": "- A simple Transation Statement parser and organiser web app made with **React** and **Supabase**.\n - Real transaction data from common banks in Singapore is parsed and stored in a database.\n - Users can view, update and export their transactions and filter by date, category, and amount, giving user full control over their financial data.",
+            "images": [
+                "images/hobbies/mic_1.jpg",
+                "images/hobbies/mic_2.jpg",
+                "images/hobbies/mic_3.jpg"
+            ],
+            "imageInterval": 4000,
+            "title": "DIY NE5532 Microphone Amplifier",
+            "bodyText": "- Analog stereo microphone amplifier using NE5532 \n - Basic NE5532 circuit to amplify basic electret mic. \n - Modified from existing schematic. \n    - Converted to actual dual power supply instead of a false ground. \n    - Increase to 15 gain instead of 11 \n    - Convert from mono to stereo microphone with an array of 4 mics \n - Almost perfect sound quality for cheap components, frequently use for online meetings and conference.",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/Inverated/BankSync"
+                    "text": "Github",
+                    "href": "https://mubaraknative.github.io/build_instruction.html"
                 }
             ],
-            "tags" : [
-                "React",
-                "Supabase",
-                "PostgreSQL"
+            "tags": [
+                "Cheap aliexpress components"
             ]
         },
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "AWS x Mandai Hackathon [Vibe-Coded]",
-            "bodyText": "- A recreation of a hackathon project vibe-coded entirely using **Kiro**, a AI powered IDE",
+            "images": [
+                "images/hobbies/batt_replacement_1.jpg",
+                "images/hobbies/batt_replacement_2.jpg"
+            ],
+            "imageInterval": 4000,
+            "title": "Battery Replacement",
+            "bodyText": "- Battery replacement and maintainence of an old MP3 placer. \n - Fixed stuck buttons and smudged display. \n Works perfectly for a 10+ years old device.",
+            "links": [],
+            "tags": [
+                "Electronic repair?"
+            ]
+        },
+        {
+            "images": [
+                "images/hobbies/screen_reuse_1.jpg",
+                "images/hobbies/screen_reuse_2.jpg",
+                "images/hobbies/screen_reuse_3.jpg"
+            ],
+            "imageInterval": 4000,
+            "title": "DIY Secondary Monitor",
+            "bodyText": "- Took apart old laptop screen to repurpose as secondary monitor. \n - Broken after 10 months. Do not use cardboard as an enclosure and spill water on it...",
+            "links": [],
+            "tags": [
+                "Electronic reuse?"
+            ]
+        },
+        {
+            "images": [
+                "images/hobbies/genshin_1.png",
+                "images/hobbies/genshin_2.png",
+                "images/hobbies/genshin_3.png",
+                "images/hobbies/genshin_4.png"
+            ],
+            "title": "Gensin",
+            "bodyText": "- Not sure if should be in my portfolio haha \n - Shows the amount of dedication i can put into something if i am motivated enough. \n - Achievement (Self proposed) \n    - Reached 123456789 mora (currency) and still climbing \n    - Max ascend all characters available (level 71 / 90) \n    - Max ascend all unique weapon i own (All rarity) \n    - 100% Exploration of all region \n    - Max inventory for purchasable ingredients (9999)",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/Inverated/AWS-Mandai-Hackathon-Project"
+                    "text": "Hoyolab",
+                    "href": "https://www.hoyolab.com/accountCenter/postList?id=35860743"
                 }
             ],
-            "tags" : [
-                "Nodejs",
-                "React",
-                "Kiro",
-                "Sqlite",
-                "AWS"
+            "tags": [
+                "Gaming"
             ]
         }
     ]
